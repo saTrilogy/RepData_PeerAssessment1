@@ -1,11 +1,4 @@
-<!-- Override the code font to Fira Sans as it supports ligatures
-     and add formatting for tables -->
-<style type="text/css">
-  code {font-family: "Fira Code"  !important;}
-  tr:nth-child(even) {background-color: #f2f2f2;}
-  th {border-bottom: 1px solid #ddd;}
-  td {padding:4px;}
-</style>
+
 Objectives
 ----------
 
