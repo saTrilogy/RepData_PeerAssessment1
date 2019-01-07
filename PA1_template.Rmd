@@ -1,8 +1,10 @@
 ---
-title: "Reproducible Research: Course Project 1"
+title: 'Reproducible Research: Course Project 1'
 author: "Chris Shattock"
 date: "6 January 2019"
-output: html_document
+output:
+  html_document: 
+    keep_md: true
 ---
 <!-- Override the code font to Fira Sans as it supports ligatures
      and add formatting for tables -->
