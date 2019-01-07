@@ -1,4 +1,3 @@
-
 Objectives
 ----------
 
@@ -82,7 +81,7 @@ print(xt, type='html',
 ```
 
 <!-- html table generated in R 3.5.1 by xtable 1.8-2 package -->
-<!-- Mon Jan 07 16:56:33 2019 -->
+<!-- Mon Jan 07 17:05:37 2019 -->
 <table style="text-align: center; margin-left: auto; margin-right: auto;">
 <tr>
 <th>
@@ -215,6 +214,10 @@ g <- ggplot(stepsByInterval, aes(TimeOfDay,MeanSteps)) +
 
 This yields the plot:
 
+``` r
+print(g)
+```
+
 ![](PA1_template_-_Copy_files/figure-markdown_github/unnamed-chunk-12-1.png)
 
 Finally, we can determine from the persisted `g$data` variable, where the maximum number of mean daily steps occurs - this yields an element number into the variable `maxIntervalNumber`. Using this element number, we may then review the data for that specific plotted point:
@@ -235,7 +238,7 @@ Imputing missing values
 As reported previously, the row counts for missing data (*IsNA = TRUE*) and valid data for the column `steps` may be tabulated as:
 
 <!-- html table generated in R 3.5.1 by xtable 1.8-2 package -->
-<!-- Mon Jan 07 16:56:34 2019 -->
+<!-- Mon Jan 07 17:05:38 2019 -->
 <table style="text-align: center; margin-left: auto; margin-right: auto;">
 <tr>
 <th>
@@ -332,7 +335,7 @@ hist(dailyStepTotalsNoNA$TotalSteps, breaks=20,
 In terms of comparing the difference in median and men between our original data where `NA` values are ignored, and our imputed data set wherein `NA` values are estimated, we may formulate the following table:
 
 <!-- html table generated in R 3.5.1 by xtable 1.8-2 package -->
-<!-- Mon Jan 07 16:57:16 2019 -->
+<!-- Mon Jan 07 17:06:20 2019 -->
 <table style="text-align: center; margin-left: auto; margin-right: auto;">
 <tr>
 <th>
@@ -483,6 +486,10 @@ g <- ggplot(allSteps, aes(TimeOfDay,MeanSteps)) +
 ```
 
 The foregoing yields the following plot:
+
+``` r
+plot(g)
+```
 
 ![](PA1_template_-_Copy_files/figure-markdown_github/unnamed-chunk-23-1.png)
 
